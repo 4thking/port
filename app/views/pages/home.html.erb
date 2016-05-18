@@ -1,0 +1,134 @@
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <%= render "pages/sidebar" %>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <section id="education">
+            <a id="education" class="nostyle"><h1>Education</h1></a>
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">Western University </h2>
+                <h3>Master of Library & Information Science</h3>
+
+                <p>Research Methods & Statistics, Social Software & Libraries, User Experience Research, Web Design and Architecture, Database Management Systems</p>
+              </div>
+              <div class="col-md-5">
+
+               <%= image_tag "/assets/western.jpg", class: "featurette-image img-responsive center-block" %>
+             </div>
+           </div>
+
+           <hr class="featurette-divider">
+
+           <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading">Ryerson University</h2>
+              <h3>Bachelor of Arts (Criminology)</h3>
+              <p>Research Design and Qualitative Methods, Criminal Justice Research and Statistics, Issues in Info Tech Law, Communities and Crime, Criminal Justice Policy, Ethics in Criminal Justice</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+             <%= image_tag "/assets/ryerson.jpg", class: "featurette-image img-responsive center-block" %>
+           </div>
+         </div>
+
+         <hr class="featurette-divider">
+
+         <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">George Brown College </h2>
+            <h3> General Arts and Science</h3>
+            <p>Introduction to Media Studies, Critical Thinking: A Reasoning Experience, Introduction to Research, Quantitative Methods</p>
+          </div>
+          <div class="col-md-5">
+           <%= image_tag "/assets/gbc.jpg", class: "featurette-image img-responsive center-block" %>
+         </div>
+       </div>
+
+       <hr class="featurette-divider">
+
+       <a id="essays" class="nostyle"><h1> Essays & Research </h1></a>
+
+       <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item"><%= link_to "Current Issues", asset_path("/current-issues.pdf"), target: '_blank' %></li>
+              <li class="list-group-item"><%= link_to "Challenges in Moving From Paper to Electronic Records", asset_path("/challenges-in-moving-from-paper-to-electronic-records.pdf"), target: '_blank' %></li>
+              <li class="list-group-item"><%= link_to "Design Report", asset_path("/design-report.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Discovery Report", asset_path("/discovery-report.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Federal Entity Report", asset_path("/federal-entity-report.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Collections Development Major Project", asset_path("/major-project.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Neo-liberalism in Libraries", asset_path("/neo-liberalism-in-libraries.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Piracy and the Library", asset_path("/piracy-and-the-library.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Research Poster Write-Up", asset_path("/poster-write-up.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Records Management Case Study", asset_path("/records-management-case-study.pdf"), target: '_blank'  %></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item"><%= link_to "Records Retention and Disposal", asset_path("/records-retention-and-disposal.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Wikimedia Research Data (Excel)", asset_path("/research.xlsx"), target: '_blank' %></li>
+              <li class="list-group-item"><%= link_to "Wikimedia Research Definitions", asset_path("/research_definitions.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Wikimedia Research Proposal", asset_path("/research-proposal.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Wikimedia Research Final Report", asset_path("/final-report-guided-research.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Social Media: Services for Seniors", asset_path("/services-for-seniors-at-the-scugog-public-library.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Social Media Content Analysis", asset_path("/social-media-content-analysis.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "The Digital Divide", asset_path("/the-digital-divide.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "Usability Report", asset_path("/usability-report.pdf"), target: '_blank'  %></li>
+              <li class="list-group-item"><%= link_to "UX Scenarios", asset_path("/ux-scenarios.pdf"), target: '_blank'  %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <hr class="featurette-divider">
+
+
+      <a id="ruby" class="nostyle"><h1> Ruby on Rails Projects </h1></a>
+
+      <div class="row">
+        <div class="col-sm-4"><a href="https://fierce-escarpment-9708.herokuapp.com/"><%= image_tag "/assets/yelp.jpg", class: "featurette-image img-responsive center-block rails" %></a>
+        </div>
+        <div class="col-sm-8">
+          <h3>Yelp Demo - Review Site</h3>
+          <p>This is the first Rails app I built from scratch. It includes a database of reviews, a clickable star rating system, the ability for users to sign in and out and for admins to create and edit restaurant listings.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4"><a href="https://lit-anchorage-1559.herokuapp.com/"><%= image_tag "/assets/etsy.jpg", class: "featurette-image img-responsive center-block" %></a>
+        </div>
+        <div class="col-sm-8">
+          <h3>Etsy Demo - Two-Way Marketplace</h3>
+          <p>This was my most challenging project to date. Styled after Esty I wanted to build a web app which allowed users the ability to create and manage their listings, purchase items and view their order histories with the ability to accept credit card payments online. Try creating a listing or using a test card with the number 4242424242424242 (any CVC and expiry date) to "purchase" some items!</p>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+  </script>
+
